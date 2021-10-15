@@ -82,7 +82,24 @@ body{
 	color:#fff;
 	font-size: 18px;
 }
-  
+.row{
+	display:flex;
+	justify-content: space-between;
+	position: relative;
+	z-index: 5;
+	flex-wrap: wrap;
+}
+.column{
+	&_2{
+		flex: 0 0 44%;
+		@media (max-width:1024px) {
+			flex:0 0 100%;
+			&:first-child{
+				margin: 0 0 50px 0;
+			}
+		}
+	}
+}
 .container{
 	max-width:1343px;
 	padding: 0 10px;
@@ -95,7 +112,7 @@ body{
 	z-index: 10;
 	width: 100%;
 	padding: 53px 0 0 0;
-	@media (max-height:480px) {
+	@media (max-height:480px),(max-width:767px)  {
 		padding: 10px 0 0 0;
 	}
 	&__body{
@@ -259,4 +276,115 @@ main{
 		}
 	}
 	
+}
+.best{
+	padding: 150px 0 144px;
+	position: relative;
+	@media (max-width:1024px) {
+		padding: 25px 0 25px;
+	}
+	&__bg_1,&__bg_2{
+		position: absolute;
+		top:0;
+		left:0;
+		width: 50%;
+		height: 100%;
+		@media (max-width:1024px) {
+			width: 100%;
+			height: 50%;
+		}
+	}
+	&__bg_2{
+		right: 0;
+		left:auto;
+		@media (max-width:1024px) {
+			top:auto;
+			bottom: 0;
+		}
+	}
+	&__title{
+		color:#fff;
+		margin: 0 0 25px 0;
+	}
+	&__subtitle{
+		color:#fff;
+		margin: 0 0 35px 0;
+	}
+}
+.offer{
+	padding: 100px 0 104px;
+	&__title-block{
+		margin: 0 0 110px 0;
+	}
+	&__title{
+		text-align: center;
+	}
+	.item-offer{
+		display: flex;
+		margin: 0 0 84px 0;
+		&:last-child{
+			margin: 0;
+		}
+		&__img{
+			padding: 5px 0 0 0;
+			margin: 0 47px 0 0;
+			@media (max-width:420px) {
+				margin: 0 20px 0 0;
+			}
+			img{
+				height: 81px;
+				@media (max-width:1024px) {
+					width: 105px;
+				}
+				@media (max-width:420px) {
+					width: 50px;
+					height: 25px;
+				}
+			}
+			
+		}
+		&__title{
+			font-size: 30px;
+			margin: 0 0 20px 0;
+			@media (max-width:500px) {
+				font-size: 24px;
+			}
+			@media (max-width:320px) {
+				font-size: 22px;
+			}
+		}
+	}
+	
+	&__btn{
+		margin: 110px auto;
+	}
+}
+.slider{
+	position: relative;
+	overflow: hidden;
+	.swiper-slide{
+		text-align: center;
+		img{
+			max-width: 100%;
+		}
+	}
+	.swiper-button-next, .swiper-button-prev{
+		display: block;
+		width: 56px;
+		height: 58px;
+		background: #fff;
+		z-index: 5;
+		&:after{
+			font-size: 0;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.swiper-button-next:after{
+		background: url('../img/slider/arrow-next.png') center no-repeat;
+	}
+	.swiper-button-prev:after{
+		background: url('../img/slider/arrow-prev.png') center no-repeat;
+	}
 }
