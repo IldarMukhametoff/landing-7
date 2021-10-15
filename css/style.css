@@ -598,6 +598,13 @@ main {
   z-index: 5;
 }
 
+@media (max-width: 480px) {
+  .slider .swiper-button-next, .slider .swiper-button-prev {
+    width: 30px;
+    height: 32px;
+  }
+}
+
 .slider .swiper-button-next:after, .slider .swiper-button-prev:after {
   font-size: 0;
   position: absolute;
