@@ -5,7 +5,7 @@
 		<meta content="text/html; charset=utf-8">
 		<meta name="viewport" content="width=device-width">
 		<!-- Шрифты -->
-		
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
 		<!------------------------------------------------------>
 
 		<!-- Подключение CSS -->
@@ -20,7 +20,7 @@
 	</head>
 <body>
 	<header class="header">
-		<div class="container">
+		<div class="header__container container">
 			<div class="header__body">
 				<a href="#" class="header__logo">Interactive<span class="font-light">Agency</span></a>
 				<div class="header__burger">
@@ -28,10 +28,10 @@
 				</div>
 				<nav class="header__menu">
 					<ul class="header__list">
-						<li><a href="#" class="header__link">Home</a></li>
-						<li><a href="#" class="header__link">About us</a></li>
-						<li><a href="#" class="header__link">Offer</a></li>
-						<li><a href="#" class="header__link">Portfolio</a></li>
+						<li><a data-goto=".main-block" href="#" class="header__link">Home</a></li>
+						<li><a data-goto=".about" href="#" class="header__link">About us</a></li>
+						<li><a data-goto=".offer" href="#" class="header__link">Offer</a></li>
+						<li><a data-goto=".slider" href="#" class="header__link">Portfolio</a></li>
 						<li><a href="#" class="header__link">Contact</a></li>
 					</ul>
 				</nav>
@@ -45,8 +45,8 @@
 					<img src="img/main-block/bg.jpg" alt="">
 				</div>
 				<div class="title-block main-block__title-block">
-					<div class="title main-block__title ">Lorem ipsum dolor sit amet</div>
-					<div class="subtitle main-block__subtitle">Nunc vel nibh tempor, pharetra lectus congue, luctus orci.</div>
+					<div class="title main-block__title anim-items">Lorem ipsum dolor sit amet</div>
+					<div class="subtitle main-block__subtitle anim-items">Nunc vel nibh tempor, pharetra lectus congue, luctus orci.</div>
 				</div>
 				<a href="#" class="btn main-block__btn">Ask for price</a>
 				<a href="#" class="main-block__scroll">
@@ -67,8 +67,8 @@
 					<div class="best__column column column_2">
 						<div class="best__item item">
 							<div class="title-block best__title-block">
-								<div class="title best__title "><span class="font-light">Best</span>Design</div>
-								<div class="subtitle best__subtitle">Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper auctor mauris, placerat fermentum lectus vulputate sed. Phasellus vestibulum sit amet dolor eget eleifend.</div>
+								<div class="title best__title anim-items"><span class="font-light">Best</span>Design</div>
+								<div class="subtitle best__subtitle anim-items">Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper auctor mauris, placerat fermentum lectus vulputate sed. Phasellus vestibulum sit amet dolor eget eleifend.</div>
 							</div>
 							<a href="#" class="btn best__btn">Ask for price</a>
 						</div>
@@ -76,8 +76,8 @@
 					<div class="best__column column column_2">
 						<div class="best__item item">
 							<div class="title-block best__title-block">
-								<div class="title best__title "><span class="font-light">Best</span>Design</div>
-								<div class="subtitle best__subtitle">Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper auctor mauris, placerat fermentum lectus vulputate sed. Phasellus vestibulum sit amet dolor eget eleifend.</div>
+								<div class="title best__title anim-items"><span class="font-light">Best</span>Design</div>
+								<div class="subtitle best__subtitle anim-items">Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper auctor mauris, placerat fermentum lectus vulputate sed. Phasellus vestibulum sit amet dolor eget eleifend.</div>
 							</div>
 							<a href="#" class="btn best__btn">Ask for price</a>
 						</div>
@@ -88,7 +88,7 @@
 		<section class="offer">
 			<div class="container offer__container">
 				<div class="title-block offer__title-block">
-					<div class="title offer__title ">What we do?</div>
+					<div class="title offer__title anim-items">What we do?</div>
 				</div>
 				<div class="offer__row row">
 					<div class="offer__column column column_2">
@@ -97,8 +97,8 @@
 								<img src="img/offer/01.png" alt="">
 							</div>
 							<div class="item-offer__content">
-								<div class="item-offer__title title">Web design</div>
-								<div class="item-offer__subtitle subtitle">Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper auctor mauris, placerat fermentum.</div>
+								<div class="item-offer__title title anim-items">Web design</div>
+								<div class="item-offer__subtitle subtitle anim-items">Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper auctor mauris, placerat fermentum.</div>
 							</div>
 						</div>
 						<div class="item-offer item">
@@ -106,8 +106,8 @@
 								<img src="img/offer/03.png" alt="">
 							</div>
 							<div class="item-offer__content">
-								<div class="item-offer__title title">Web design</div>
-								<div class="item-offer__subtitle subtitle">Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper auctor mauris, placerat fermentum.</div>
+								<div class="item-offer__title title anim-items">Web design</div>
+								<div class="item-offer__subtitle subtitle anim-items">Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper auctor mauris, placerat fermentum.</div>
 							</div>
 						</div>
 					</div>
@@ -117,8 +117,8 @@
 								<img src="img/offer/02.png" alt="">
 							</div>
 							<div class="item-offer__content">
-								<div class="item-offer__title title">Web design</div>
-								<div class="item-offer__subtitle subtitle">Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper auctor mauris, placerat fermentum.</div>
+								<div class="item-offer__title title anim-items">Web design</div>
+								<div class="item-offer__subtitle subtitle anim-items">Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper auctor mauris, placerat fermentum.</div>
 							</div>
 						</div>
 						<div class="item-offer item">
@@ -126,8 +126,8 @@
 								<img src="img/offer/04.png" alt="">
 							</div>
 							<div class="item-offer__content">
-								<div class="item-offer__title title">Web design</div>
-								<div class="item-offer__subtitle subtitle">Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper auctor mauris, placerat fermentum.</div>
+								<div class="item-offer__title title anim-items">Web design</div>
+								<div class="item-offer__subtitle subtitle anim-items">Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper auctor mauris, placerat fermentum.</div>
 							</div>
 						</div>
 					</div>
@@ -153,11 +153,65 @@
 			<div class="swiper-button-next"></div>
 			<div class="swiper-button-prev"></div>
 		</div>
+		<section class="about">
+			<div class="about__bg ibg">
+				<img src="img/about/bg.jpg" alt="">
+			</div>
+			<div class="container about__container">
+				<div class="title-block about__title-block">
+					<div class="title about__title anim-items">About us!</div>
+					<div class="subtitle about__subtitle anim-items">Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper auctor mauris, placerat fermentum.</div>
+				</div>
+				<div class="about__row row">
+					<div class="about__column column column_4">
+						<div class="item-about item">
+							<div class="item-about__img anim-items">
+								<img src="img/about/01.png" alt="">
+							</div>
+							<div class="item-about__title title anim-items">John Doe</div>
+							<div class="item-about__subtitle subtitle anim-items">Curabitur ullamcorper auctor mauris, placerat fermentum.</div>
+						</div>
+					</div>
+					<div class="about__column column column_4">
+						<div class="item-about item">
+							<div class="item-about__img anim-items">
+								<img src="img/about/02.png" alt="">
+							</div>
+							<div class="item-about__title title anim-items">John Doe</div>
+							<div class="item-about__subtitle subtitle anim-items">Aliquam sagittis neque in lectus semper, arcu scelerisque.</div>
+						</div>
+					</div>
+					<div class="about__column column column_4">
+						<div class="item-about item">
+							<div class="item-about__img anim-items">
+								<img src="img/about/03.png" alt="">
+							</div>
+							<div class="item-about__title title anim-items">John Doe</div>
+							<div class="item-about__subtitle subtitle anim-items">Curabitur ullamcorper auctor mauris, placerat fermentum.</div>
+						</div>
+					</div>
+					<div class="about__column column column_4">
+						<div class="item-about item">
+							<div class="item-about__img anim-items">
+								<img src="img/about/04.png" alt="">
+							</div>
+							<div class="item-about__title title anim-items">John Doe</div>
+							<div class="item-about__subtitle subtitle anim-items">Neque in lectus semper, nec elementum arcu scelerisque.</div>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="btn about__btn">Watch more</a>
+			</div>
+		</section>
+		<div class="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1467.5818698255557!2d-74.27388999089449!3d40.78026385830012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3aba37aba13f3%3A0xe05ffe459f107164!2zMSBGYWFzIEN0LCBXZXN0IE9yYW5nZSwgTkogMDcwNTIsINCh0KjQkA!5e0!3m2!1sru!2sru!4v1634548501447!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+		</div>
 	</main>
 	<!-- Подключение Javascript -->	
 	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 	<script type="text/javascript" src="js/ibg.js"></script>
 	<script type="text/javascript" src="js/menu.js"></script>
 	<script type="text/javascript" src="js/slider.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
